@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SORPRESA</title>
+
+
+</head>
+<style>
+
+.body {
+  background: rgb(28, 172, 88);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body__title {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  width: 100%;
+  max-width: 512px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 0.5rem 0 black;
+}
+
+.image {
+  width: 50%;
+  
+}
+
+.button {
+  background: white;
+  border: 0.125rem solid black;
+  border-radius: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1em;
+  padding: 1em;
+  transition: all 0.5s;
+  text-align: center;
+
+}
+
+.button:hover {
+  box-shadow: 0 0.5rem 0.5rem 0 black;
+  filter: brightness(125%);
+  transform: scale(1.125);
+  text-align: center;
+}
+</style>
+
+<body class="body">
+  
+
+   
+
+
+     
+  
+     
+    
+   <h1 class="body__title">❤ QUIERES SER MI NOVIA ❤ </h1>
+  
+    <img
+      src="https://1.bp.blogspot.com/-qsvCBLdgYj8/XCLjZK9_RMI/AAAAAAAABBA/BsQ7kYtn9qkPkQ3VhF8g_1Er73bGs7KGQCLcBGAs/w1200-h630-p-k-no-nu/srewk.jpg"
+      alt="Imagen del amor" class="image" />
+    
+    <button id="yes" class="button">🌚SI Quiero🌚</button>
+    <button id="no" class="button">😭Nooooo😭</button>
+  
+   <script>
+
+    
+    alert ('❤❤❤  HOLA  ❤❤❤')
+    var nombre = prompt('¿Como te llamas?')
+      
+    const ButtonSi = document.getElementById('yes');
+    const ButtonNo = document.getElementById('no');
+   
+    const nowZomosNobios = () => {
+      alert('💞 Ahora Somos Novios 💞');
+      alert('😱Nuestra Boda Es MañaNa😱');
+      location.href = 'https://www.youtube.com/watch?v=VtKcDwz6hiM';
+    };
+
+    const evitarKCRompanMyBobo = () => {
+     ButtonNo.style.position = 'absolute';
+     ButtonNo.style.top = (Math.random() * window.innerHeight) + 'px';
+     ButtonNo.style.left = (Math.random() * window.innerWidth) + 'px';
+    };
+
+    ButtonSi.addEventListener('click', nowZomosNobios);
+    ButtonNo.addEventListener('mouseover', evitarKCRompanMyBobo);
+   
+  </script>
+ </body>
+
+</html>
